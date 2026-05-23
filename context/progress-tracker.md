@@ -4,7 +4,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Feature 01: Design System — complete
+- Feature 02: Editor Chrome — complete
 
 ## Current Goal
 
@@ -18,6 +18,11 @@ Update this file whenever the current phase, active feature, or implementation s
   - Created lib/utils.ts with cn() helper (clsx + tailwind-merge)
   - Configured globals.css with all dark theme CSS custom properties and @theme inline Tailwind mappings
   - TypeScript compiles cleanly with zero errors
+
+- Feature 02: Editor Chrome
+  - Created `components/editor/editor-navbar.tsx` — fixed-height top bar with sidebar toggle (PanelLeftOpen/PanelLeftClose), left/center/right sections, dark bg with bottom border
+  - Created `components/editor/project-sidebar.tsx` — floating overlay sidebar, slides in from left, Projects header with close button, My Projects/Shared tabs with empty states, full-width New Project button
+  - Dialog pattern ready via existing `components/ui/dialog.tsx` (DialogHeader, DialogTitle, DialogDescription, DialogFooter) — all mapped to dark theme tokens via globals.css
 
 ## In Progress
 
